@@ -1,0 +1,450 @@
+html, body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    /*overflow-y: scroll;*/
+    /*position: relative;*/
+    color:#7e24fa;
+    font-weight: 500;
+  }
+  
+.container{
+  padding: 0px !important;
+  }
+
+  h3{
+      font-size: 26px;
+      letter-spacing: 1px;
+  }
+
+.backgroud-light-purple{
+    background-color: #f4ecff;
+}
+.backgroud-dark-purple{
+   background-color: #7e24fa;
+   color: white;
+   height: 100vh !important;
+   min-height: 100%;
+
+
+}
+  .table-container {
+    display: table;
+    width: 100%;
+  }
+  
+  .table-container .table-row {
+    height: 100%;
+    width: 100%;
+    display: table-row;
+  }
+  .table-container .table-row .table-col {
+    display: table-cell;
+    float: none;
+ 
+  }
+
+ 
+  div#logedin{
+    display: none;
+  }
+  /*
+  div#log-div{
+    float: left;
+  }
+*/
+ /*
+  .row {
+    display: flex; 
+    min-height: 100%;
+
+  }
+  */
+  .col {
+    /* flex: 1;*/
+  }
+  /*
+  .container-fluid{
+      min-height: 100%;
+  }
+*/
+/*
+  .row-fluid { 
+      height: 100vh;
+    }
+*/
+  /*.full-screen{
+        height: 100%;
+    }*/
+
+.form{
+        max-width:360px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20%;
+        /*box-shadow: 1px 1px 1px 1px#e4d2ff;*/
+        color:#caaef2;
+        text-align: center;
+        margin: auto;
+        border: 2px solid #fff;
+        border-radius:  8px; 
+        -webkit-border-radius:  8px ;
+        -moz-border-radius:  8px ;
+        -ms-border-radius:  8px ;
+        -o-border-radius:  8px ;
+}
+
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:#caaef2;
+    opacity: 1; /* Firefox */
+    text-align: center;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:#caaef2;
+    text-align: center;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color:#caaef2;
+    text-align: center;
+}
+.loader{
+    background-color:#7e24fa;
+    width:100%;
+    display: none;
+    margin-bottom:0px !important;
+    padding:10px;
+}
+  
+  .input {
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    width: 100%; height: 5.5rem;
+    color: #caaef2;
+    background-color:#FFFFFF;
+    border: 0;
+    text-align: center;
+  }
+
+  .form-check{
+    margin-top: 20%;
+  }
+.formError{
+    color:red;
+}
+#form_passwordError,
+#form_usernameError{
+    display:none;
+}
+input#username,
+input#password{
+    border: 1px solid transparent;
+}
+  input.form-check-input{
+    font-size: x-large;
+    margin-right: 10px;
+  }
+  .checkbox-custom{
+    opacity: 0;
+    position: absolute;   
+    
+}
+
+.checkbox-custom, .checkbox-custom-label{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    cursor: pointer;
+   
+}
+
+.checkbox-custom-label, .radio-custom-label {
+    position: relative;
+}
+
+.checkbox-custom + .checkbox-custom-label:before, .radio-custom + .radio-custom-label:before {
+    content: '';
+    background: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    text-align: center;
+    border: 1px solid #7e24fa;
+    border-radius: 5px;
+}
+
+.checkbox-custom:checked + .checkbox-custom-label:before {
+    background: #7e24fa ;
+    box-shadow: inset 0px 0px 0px 2px #FFF;
+}
+
+.radio-custom + .radio-custom-label:before {
+    border-radius: 50%;
+}
+
+.radio-custom:checked + .radio-custom-label:before {
+    background: #ccc;
+    box-shadow: inset 0px 0px 0px 4px #fff;
+}
+
+  .social-media{
+    margin-top: 20%;
+  }
+/*=========================
+  Icons
+ ================= */
+
+/* footer social icons */
+
+i{
+    color: #7e24fa;
+}
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+	padding: 0;
+}
+ul.social-network li {
+	display: inline;
+	margin: 0 5px;
+}
+
+.social-media{
+    margin-bottom: 20px;
+}
+.social-network a i{
+color:#7e24fa;
+}
+/* footer social icons */
+.social-network a.icoRss:hover {
+	background-color: #F56505;
+}
+.social-network a.icoFacebook:hover {
+	background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+	background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {
+	background-color:#BD3518;
+}
+.social-network a.icoVimeo:hover {
+	background-color:#0590B8;
+}
+.social-network a.icoLinkedin:hover {
+	background-color:#007bb7;
+}
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+	color:#FFF;
+}
+a.socialIcon:hover, .socialHoverClass {
+	color:#44BCDD;
+}
+
+.social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 30px;
+	height: 30px;
+	font-size:15px;
+}
+.social-circle li i {
+	margin:0;
+	line-height:30px;
+	text-align: center;
+}
+
+
+.social-circle li a:hover svg, .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+    transition: all 0.2s;
+    fill: #FFF;
+}
+.social-circle i {
+	color: #fff;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+a {
+ background-color: #e4d2ff;   
+}
+.logocombo{
+    margin-top:30%;
+}
+.logo{
+    width:70px;
+    height:70px;
+    background-color:#fff;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #caaef2;
+    border-radius: 8px;
+    padding:8px;
+    
+}
+.button-signout{
+    background-color: white;
+    color: #7e24fa;
+    padding: 8px;
+    border: 2px solid #7e24fa;
+    border-radius: 25px;
+    width: 140px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    margin-top: 25%;
+}
+
+    .input:focus {
+      outline: none;
+    }
+    .input--top {
+   
+      border-top: 0;
+    }
+    .input--submit {
+      background-color: #7e24fa ;
+      color: #fff;
+   
+      cursor: pointer;
+      border-top: 0;
+  
+    }
+  
+  .text {
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.8);
+    text-decoration: none;
+  }
+    .text--small {
+      opacity: 0.85;
+      font-size: 0.75rem;
+      cursor: pointer;
+    }
+      .text--small:hover {
+        opacity: 1;
+      }
+    .text--omega {
+      width: 200%;
+      margin: 0 0 1rem -50%;
+      font-size: 1.5rem;
+      line-height: 1.125;
+      font-weight: normal;
+    }
+    .text--centered {
+      display: block;
+      text-align: center;
+    }
+    .text--border-right {
+      border-right: 1px solid rgba(255,255,255,0.5);
+      margin-right: 0.75rem;
+      padding-right: 0.75rem;
+    }
+
+
+    @media only screen and (max-width: 992px) {
+        html{
+            background-color:#f4ecff ;
+        }
+
+          .table-container .table-row .table-col {
+            display: block;
+            float: left;
+          }
+          .form{
+            border: 2px solid #7e24fa;
+          }
+       
+          #log-div {
+            height: 250px !important;
+            color: white;
+           
+          }
+          .login-form{
+            top: 167px;
+          }
+          .logocombo {
+            margin-top: 5%; 
+        }
+
+          .login-form{
+            position:fixed;
+            width: 280px;
+          
+            z-index: 1;
+          }
+          #login-col{
+              min-height:0px;
+          }
+
+    }
+
+  
+/* Iphone 5*/
+@media only screen and (min-width : 320px)  and (max-width : 568px){
+
+
+  
+      .logocombo {
+        margin-top: 5%; 
+    }
+      .login-form{
+        left: 20px;
+        top: 167px;
+      }
+      #login-col{
+          min-height:0px;
+      }
+      .input{
+          height: 4rem;
+      }
+      .form-check{
+          margin-top: 30%;
+         
+      }
+      .social-media {
+        margin-top: 10%;
+     }
+     #form_passwordError{
+         margin-bottom: -15%;
+     }
+     
+}
+
+/* Iphone X*/
+@media only screen and (min-device-width : 375px)  and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) { 
+ 
+  /* STYLES GO HERE */
+
+.login-form{
+  left: 43px !important;
+
+}
+
+
+}
