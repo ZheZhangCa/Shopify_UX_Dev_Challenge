@@ -133,6 +133,9 @@ html, body {
   .form-check{
     margin-top: 20%;
   }
+  .error-massage{
+    height: 60px;
+  }
 .formError{
     color:red;
 }
@@ -395,6 +398,10 @@ a {
           .login-form{
             position:fixed;
             width: 280px;
+            right: 0;
+            left: 0;
+            margin-right: auto;
+            margin-left: auto;
           
             z-index: 1;
           }
@@ -407,20 +414,9 @@ a {
   
 /* Iphone 5*/
 @media only screen and (min-width : 320px)  and (max-width : 568px){
-
-
   
-      .logocombo {
-        margin-top: 5%; 
-    }
-      .login-form{
-        left: 20px;
-        top: 167px;
-      }
-      #login-col{
-          min-height:0px;
-      }
-      .input{
+      .input,
+      #loader{
           height: 4rem;
       }
       .form-check{
@@ -430,9 +426,9 @@ a {
       .social-media {
         margin-top: 10%;
      }
-     #form_passwordError{
-         margin-bottom: -15%;
-     }
+    #logedin{
+      max-height: 318px;
+    }
      
 }
 
@@ -441,10 +437,10 @@ a {
  
   /* STYLES GO HERE */
 
-.login-form{
-  left: 43px !important;
-
 }
 
-
+@media only screen and (max-width: 300px){
+  .login-form{
+    width: 180px;
+   }
 }

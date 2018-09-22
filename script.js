@@ -85,5 +85,6 @@ $( "#signout" ).click(function() {
     $( "#loader" ).hide();
     $( "#login" ).show();
     $("#login-form").trigger("reset");
+    $( "#checkbox-1" ).prop( "checked", false );
   });
 
