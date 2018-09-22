@@ -78,7 +78,7 @@ if (error == 0){
    */
   return false;
 }
-
+/*
 $( "#signout" ).click(function() {
     document.getElementById('login-col').style.display="table-cell"; 
     $( "#logedin" ).hide();
@@ -87,4 +87,15 @@ $( "#signout" ).click(function() {
     $("#login-form").trigger("reset");
     $( "#checkbox-1" ).prop( "checked", false );
   });
+*/
+document.getElementById("signout").addEventListener("click", signoutFunction);
 
+function signoutFunction() {
+    document.getElementById('login-col').style.display="table-cell";
+    document.getElementById('logedin').style.display="none";
+    document.getElementById('loader').style.display="none";
+    document.getElementById('login').style.display="table-cell";
+    document.getElementById("login-form").reset();
+    document.getElementById("checkbox-1").checked = false;
+
+}
